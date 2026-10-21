@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px #0001;
+}
+
+h2 {
+    margin-top: 28px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 10px;
+}
+
+input,
+button {
+    padding: 8px;
+    font: inherit;
+}
+
+input {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+button {
+    border: 0;
+    border-radius: 4px;
+    background: #2458a6;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1c4582;
+}
+
+#cancelar,
+#mostrar-todos {
+    background: #e8e8e8;
+    color: #222;
+}
+
+.tabela {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f2f5f9;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+td button {
+    margin-right: 6px;
+}
+
+.erro {
+    color: #b00020;
+}
+
+@media (max-width: 720px) {
+    main {
+        margin: 0;
+        padding: 16px;
+        border-radius: 0;
+    }
+}
