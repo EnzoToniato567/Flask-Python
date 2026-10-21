@@ -42,6 +42,12 @@ python flask_api/app.py
 
 Abra `http://localhost:5000/`. O Flask serve a página da pasta `web/` e as rotas da API na porta 5000.
 
+## GitHub Pages
+
+Publique a pasta principal do repositório no GitHub Pages. O `index.html` da raiz abre `web/livros.html`, e os arquivos CSS e JavaScript usam caminhos relativos.
+
+O GitHub Pages hospeda apenas os arquivos da página. Para que o cadastro, a busca, a edição e a exclusão funcionem para outras pessoas, a API Flask e o banco precisam estar em um servidor acessível pela internet. Depois, troque `API_URL` em `web/script.js` pelo endereço HTTPS dessa API. `localhost:5000` funciona apenas no seu computador.
+
 ## Rotas da API
 
 URL base: `http://localhost:5000`.

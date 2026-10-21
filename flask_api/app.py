@@ -1,5 +1,5 @@
 import pymysql
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, redirect, request
 
 app = Flask(__name__, static_folder="../web", static_url_path="/web") # Patch da pasta web
 
@@ -14,7 +14,7 @@ def permitir_frontend(resposta):
 
 @app.get("/")
 def pagina_inicial():
-    return app.send_static_file("index.html") # Rota do index.html, no frontend
+    return redirect("/web/livros.html") # Rota da página, no frontend
 
 
 def executar(comando, valores=()):
